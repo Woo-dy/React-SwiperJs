@@ -1,0 +1,90 @@
+/* styles.css */
+.swiper-pagination-bullet {
+   background: red; /* 페이지네이션 색상 */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+   color: blue; /* 네비게이션 버튼 색상 */
+}
+
+/* ============================================== */
+
+.container .swiper {
+	width: 100%;
+   height: 100%;
+}
+
+.container .swiper-wrapper .swiper-slide {
+   background-color: #ddd;
+   text-align: center;
+   box-sizing: border-box;
+   padding: 30px;
+   text-align: left;
+   position: relative;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+} 
+
+.container .swiper-wrapper .swiper-slide .text_box {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: rgba(0, 0, 0, 0.3) ;
+   padding: 30px;
+   box-sizing: border-box;
+}
+
+.container .swiper-wrapper .swiper-slide:hover .text_box {
+   background: rgba(0, 0, 0, 0.0) ;
+   transition: all 0.5s;
+}
+
+.container .swiper-wrapper .swiper-slide h2 {
+   font-size: 36px;
+   font-weight: 600;
+   color: #fff;
+   margin-bottom: 12px;
+}
+
+.container .swiper-wrapper .swiper-slide p {
+   font-size: 20px;
+   font-weight: 400;
+   color: #fff;
+}
+
+.container .swiper .swiper-button-next,
+.container .swiper .swiper-button-prev {
+	width: 46px;
+	height: 46px;
+	border: 2px solid #fff;
+	outline: none;
+	color: #fff;
+	opacity: 0.3;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+   transform: translate(0%, -50%);
+	margin: auto;
+	box-sizing: border-box;
+	z-index: 10;
+	border-radius: 50%;
+	background-color: transparent;
+	color: #fff;
+}
+
+.container .swiper .swiper-button-next:after, 
+.container .swiper .swiper-button-prev:after {display: none;}
+
+
+.container .swiper .swiper-button-prev:hover, 
+.container .swiper .swiper-button-next:hover {
+   background-color: transparent;
+   border: 2px solid #00A38B;
+   color: #00A38B;
+   transition: all 0.5s;
+   opacity: 1.0;
+}
